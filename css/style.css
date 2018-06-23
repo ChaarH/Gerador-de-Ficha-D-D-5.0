@@ -1,0 +1,235 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #363636;
+    color: #fff
+}
+
+img {
+    width: 100px;
+    float: left;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.atributos {
+    width: 100px;
+    margin-right: 5px;
+    border: 1px solid #000;
+    padding: 10px;
+    float: right;
+    margin-top: -49px;
+}
+
+.atributos > input {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    background-color: #363636;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.armor_class {
+    width: 120px;
+    height: 100px;
+    float: right;
+    border: 1px solid #000;
+    margin: -139px 5px 0 0;
+}
+
+input, select {
+    margin-right: 5px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background-color: #363636;
+    color: #fff;
+}
+
+.central {
+    display: flex;
+}
+
+.abaixo {
+    display: flex;
+}
+
+.central > fieldset > legend {
+    text-align: center;
+}
+
+.teste-resist {
+    width: 200px;
+    height: 550px;
+}
+
+.teste-resist p {
+    text-align: center;
+}
+
+.info {
+    width: 200px;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.info > input {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.btn-submit {
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #f70909;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #363636;
+    color: #fff;
+    transition: 0.4s;
+    border: 1px solid #fff;
+}
+
+#res {
+    color: green;
+}
+
+input {
+    width: 120px;
+}
+
+.input_geral {
+    width: 30px;
+}
+
+fieldset {
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-style: italic;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #363636;
+}
+
+.mount-coins {
+    font-size: 14px;
+}
+
+.mount-coins > input {
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+.role {
+    width: 410px
+}
+
+.atr {
+    text-align: center;
+    height: 550px;;
+}
+
+.atr > p {
+    /* font-weight: bold; */
+}
+
+.input-atr {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.atk-spell {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    text-align: center
+}
+
+.atk {
+    width: 100%;
+    display: flex;
+    flex-direction: row
+}
+
+.atk div {
+    width: 120px;
+    padding: 3px;
+}
+
+.equi {
+    width: 200px;
+}
+
+.outras-habilidades {
+    width: 630px;
+}
+
+.feito-por {
+    float: right;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.shield {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 100% !important;
+    border-bottom-right-radius: 100% !important;
+    text-align: center;
+}
+
+.radio {
+    width: 10px !important;
+}
+
+.vlr-mod {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-print {
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #f70909;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-print:hover {
+    background-color: #fff;
+    color: #f70909;
+    transition: 0.4s;
+    border: 1px solid #f70909;
+}
+
