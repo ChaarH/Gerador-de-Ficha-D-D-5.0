@@ -21,16 +21,6 @@
             Nome
             <input id="nomePersonagem" name="nomePersonagem" type="text" autofocus>
 
-            Nível
-            <select name="" id="slc-nivel">
-                <?php
-
-                for($i=1;$i<=20;$i++) {
-                    echo '<option value="'.$i.'">'.$i.'º Nível</option>';
-                }
-                ?>
-            </select>
-
             Jogador
             <input id="nomeJogador" type="text">
 
@@ -78,6 +68,15 @@
                 <option value="Monge">Monge</option>
                 <option value="Paladino">Paladino</option>
                 <option value="Ranger">Ranger</option>
+            </select>
+
+            Nível
+            <select name="" id="slc-nivel" onchange="chkNivel()">
+                <?php
+                for($i=1;$i<=20;$i++) {
+                    echo '<option value="'.$i.'">'.$i.'º Nível</option>';
+                }
+                ?>
             </select>
 
             Antecedentes
@@ -195,14 +194,15 @@
                     <hr>
 
                     Dado de vida: 
-                    <select name="" id="">
+                    <!-- <select name="" id=-"dado-vida">
                         <option value="">-- Selecione --</option>
                         <option value="">d4</option>
                         <option value="">d6</option>
                         <option value="">d8</option>
                         <option value="">d10</option>
                         <option value="">d12</option>
-                    </select>
+                    </select> -->
+                    <span id="dado-vida">Não definido</span>
             </fieldset>
 
             <fieldset class="atk-spell">
@@ -288,13 +288,9 @@
 
 <script src="js/geral.js"></script>
 <script src="js/validacao.js"></script>
-<script src="js/teste.js"></script>
 <script src="js/classes.js"></script>
-
+<script src="js/nivel.js"></script>
+<script src="js/arraysClasses.js"></script>
 </body>
-
-
-
-
 
 </html>
