@@ -30,6 +30,7 @@ var idiomasProficiencias = document.getElementById('idiomas-proficiencias');
 // Outras Habilidades
 var outrasHabilidades = document.getElementById('outras-habilidades');
 
+
 function chkMod(str) {
 
     // 1 - Força
@@ -51,29 +52,7 @@ function chkMod(str) {
             atrValor = document.getElementById('des-atr');
             modValor = modDestreza;
 
-            var caValor      = document.getElementById('des-mod');
-            var attValor     = caValor.innerHTML;
-
-            // Trata se o valor do modificador é "-" ou "+"
-            var trataMod     = attValor.split();
             
-            var vlrShield    = document.getElementById('vlr-shield');
-
-            if(trataMod == '-5' || '-4' || '-3' || '-2' || '-1') {
-                var trataMod = attValor.split('-');
-                var resultadoMod = parseInt(trataMod[1]);
-                vlrShield.value  = 10 - resultadoMod;    
-
-            } else {
-                var trataMod = attValor.split('+');
-                var resultadoMod = parseInt(trataMod[1]);
-                vlrShield.value  = 10 + resultadoMod;
-            }
-            
-            if(trataMod == '0') {
-                var resultadoMod = parseInt(trataMod[0]);
-                vlrShield.value = 10;   
-            }
 
             break;
         case 3:
@@ -173,6 +152,31 @@ function chkMod(str) {
         modValor.innerHTML = '+10';
         modValor.style.color = '#22c109';
     }
+
+    var attValor     = modValor.innerHTML;
+
+    // Trata se o valor do modificador é "-" ou "+"
+    var trataMod     = attValor.split();
+    alert('Res: '+trataMod);
+    var vlrShield    = document.getElementById('vlr-shield');
+
+    if(trataMod == '-5' || '-4' || '-3' || '-2' || '-1') {
+        var trataMod     = attValor.split('-');
+        alert('Menos: '+trataMod);
+        var resultadoMod = parseInt(trataMod[1]);
+        vlrShield.value  = 10 - resultadoMod;    
+    } 
+    
+    else if(trataMod == '+1' || '+2' || '+3' || '+4' || '+5' || '+6' || '+7' || '+8' || '+9' || '+10') {
+        var trataMod     = attValor.split('+');
+        alert('Mais');
+        var resultadoMod = parseInt(trataMod[1]);
+        vlrShield.value  = 10 + resultadoMod;
+    } else {
+        alert('Zero');
+        var resultadoMod = parseInt(trataMod[0]);
+        vlrShield.value  = 10;   
+    }
 };
 
 
@@ -253,7 +257,7 @@ function chkRace() {
 
             outrasHabilidades.innerHTML = 'Vantagem em testes de resistência contra venenos, e resistência contra dano de veneno.'
             +'\n\nTreinamento de Combate dos Anões: O anão tem proficiência com o machado de guerra, machadinha, martelo de arremesso e martelo de guerra.'
-            +'\n\n\Tenacidade Anã. Seu máximo de pontos de vida aumentam em 1, e cada vez que o anão da colina sobe um nível, ele recebe 1 ponto de vida adicional.';
+            +'\n\n\Tenacidade Anã: Seu máximo de pontos de vida aumentam em 1, e cada vez que o anão da colina sobe um nível, ele recebe 1 ponto de vida adicional.';
 
             ligacoes.innerHTML = 'Ligação com Rochas: Sempre que um anão realizar um teste de Inteligência (História) relacionado com a origem de um trabalho em pedra,'
             +' ele é considerado Proficiente na Perícia História e adiciona o dobro do seu Bônus de Proficiência no teste, ao invés do seu bônus de proficiência normal.';
